@@ -1,2 +1,16 @@
+includes
+- required_key(key, error_message = nil)
+- required_keys(*keys)
+- required_key!(key, error_message = nil)
+- assert_required_keys(*required_keys) 
+- assert_only_keys(*only_keys)
+- dup_values(&default_proc)
+- class HashOfArrays
+
+
+HashOfArrays
 accesing a value with the bracket notation will always return an array
-use fetch if you don't want an array
+
+ha = HashOfArrays.new(:foo => 'bar', :arr => [1,2])
+ha[:foo] # => ['bar']
+ha[:arr] # => [1,2]

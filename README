@@ -1,0 +1,2 @@
+accesing a value with the bracket notation will always return an array
+use fetch if you don't want an array
